@@ -1,0 +1,22 @@
+// PRIMERO HABILITAR LOS PERMISOS DE ESCRITURA Y LECTURA DENTRO DEL 
+sudo chown -R $USER:$USER .
+sudo chmod -R 755 .
+
+//ESTO SE HACE EN LAS RUTAS:
+
+cd /usr/local/share/perl5/5.36/AI/MXNet
+
+En esa ruta pegar los archivos:
+
+Types.pm
+NdArrrays.pm
+
+
+Moverse hacia la carpeta NdArrrays
+
+cd NDArray
+
+volver a ejecutar el chown y el chmod
+Pegar el archivo:
+
+Slice.pm
