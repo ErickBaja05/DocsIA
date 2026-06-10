@@ -63,8 +63,13 @@ sub viterbi{
   my $obs = $O->slice(0)->asscalar;
   my $b0 =$B->slice(':', $obs);
 
-    
-  $args{log} ? $D->slice(':', 0)->set(($pi + $b0)->expand_dims(axis=>1)) : $D->slice(':', 0)->set(($pi * $b0)->expand_dims(axis=>1));
+  
+  if($args{log}){
+    $D->slice(':', 0)->set(($pi + $b0)->expand_dims(axis=>1));
+  }else{
+    $D->slice(':', 0)->set(($pi * $b0)->expand_dims(axis=>1));
+  }
+
   
   #$D->slice(':',0)->set($pi + $b0);
 
