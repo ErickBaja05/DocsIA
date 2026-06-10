@@ -1,0 +1,85 @@
+#################################################
+# Perl
+#################################################
+
+# Módulos compilados
+blib/
+_build/
+Build
+Build.bat
+Makefile
+Makefile.old
+MYMETA.*
+pm_to_blib
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Cobertura de código
+cover_db/
+
+# Pruebas
+junit_output.xml
+
+#################################################
+# Visual Studio
+#################################################
+
+.vs/
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Bases de datos de IntelliSense
+*.VC.db
+*.VC.opendb
+
+#################################################
+# Visual Studio Code
+#################################################
+
+.vscode/
+
+#################################################
+# Archivos del sistema
+#################################################
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+#################################################
+# Dependencias locales
+#################################################
+
+local/
+cpanfile.snapshot
+
+#################################################
+# Archivos de depuración
+#################################################
+
+core
+core.*
+*.stackdump
+
+#################################################
+# Git
+#################################################
+
+.gitmodules
